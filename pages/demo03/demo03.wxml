@@ -1,0 +1,36 @@
+<!--pages/demo03/demo03.wxml-->
+<!-- 
+ 1.text标签相当于web中的span标签，写多个是不会换行的
+ 2.view标签相当于是块级元素，默认是换行的
+ -->
+<!-- <text>pages/demo03/demo03.wxml</text>
+<text>1</text>
+<text>2</text>
+<view>3</view>
+<view>4</view> -->
+<view>{{message}}</view>
+<view>{{num}}</view>
+<view>{{bol}}</view>
+<view>{{person.age}}</view>
+<view>{{person.name}}</view>
+<view data-num="{{num}}">自定义属性</view>
+<view>
+  <checkbox checked="{{true}}"></checkbox>
+</view>
+
+<!-- block 占位符标签  写代码的时候 可以看到标签的存在 运行的时候不能-->
+
+<view>
+  <view>条件渲染</view>
+  <!-- <view wx:if="{{true}}">显示</view>
+  <view wx:if="{{false}}">隐藏</view> -->
+
+  <view wx:if="{{false}}">1</view>
+  <view wx:elif="{{false}}">2</view>
+  <view>3</view>
+
+  <view>----------------------------------------</view>
+  <view hidden>hidden1</view>
+  <view hidden="{{false}}">hidden2</view>
+</view>
+

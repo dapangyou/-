@@ -1,0 +1,8 @@
+<!--pages/demo06/demo06.wxml-->
+<text>pages/demo06/demo06.wxml</text>
+
+<!-- 练习双向数据绑定 -->
+<view>{{num}}</view>
+<input type="text" bindinput="handleInput"/>
+<button bindtap="handleTap" data-operation="{{1}}">+</button>
+<button bindtap="handleTap" data-operation="{{-1}}">-</button>
